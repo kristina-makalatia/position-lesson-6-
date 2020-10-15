@@ -1,0 +1,102 @@
+body {
+	height: 1800px;
+	padding-top: 35px;
+}
+/*Header*/
+.logo {
+	float: left;
+}
+.navigation {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.nav-li {
+	float: right;
+}
+.nav-ul::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.header-wraper {
+	background-color: red;
+	position: fixed;
+	top: 0;
+	left:0;
+	width: 100%;
+	z-index: 20;
+}
+
+/*Position absolute*/
+.wraper {
+	width: 400px;
+	height: 400px;
+	background-color: yellow;
+	position: relative;
+}
+.wraper-child {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	position: absolute;
+	top:100px;
+	left: 100px;
+	z-index: 2;
+}
+.wraper-child2 {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	position: relative;
+	z-index: 1;
+}
+.test {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.wraper-child3 {
+	background-color: black;
+	position: absolute;
+	top:150px;
+	left: 150px;
+	width: 100px;
+	height: 100px;
+	z-index: 3;
+}
+.image-test {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+}
+.image-wraper {
+	position: relative;
+	width: 1000px;
+}
+.image-icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.bg-image {
+	background-image: url('https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg');
+	background-repeat: no-repeat;
+	height: 500px;
+	width: 1000px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.text-bg-image {
+	position: absolute;
+	top:0;
+	right: 0;
+	color: #fff;
+
+}
